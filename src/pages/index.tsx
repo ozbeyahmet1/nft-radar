@@ -4,6 +4,7 @@ import { CustomLayout } from '@/components/Layout';
 import Image from 'next/image';
 import { useState } from 'react';
 import styles from '../styles/homepage.module.css'
+import { NftCard } from '@/components/NftCard'
 
 export default function Home() {
   const homepageHeadProps: IHeadProps = {
@@ -28,22 +29,32 @@ export default function Home() {
               height={250}
             />
             <div className={styles['homepage_grid']}>
-              <div style={{ background: "pink" }}>
-                a
-              </div>
-              <div style={{ background: "pink" }}>
-                a
-              </div>
-              <div style={{ background: "pink" }}>
-                a
-              </div>
+              <NftCard
+                imageSrc=''
+                name=''
+                owner=''
+                price={0}
+              />
+              <NftCard
+                imageSrc=''
+                name=''
+                owner=''
+                price={0}
+              />
+              <NftCard
+                imageSrc=''
+                name=''
+                owner=''
+                price={0}
+              />
 
-              <div style={{ background: "pink" }}>
-                a
-              </div>
-              <div style={{ background: "pink" }}>
-                a
-              </div>
+              <NftCard
+                imageSrc=''
+                name=''
+                owner=''
+                price={0}
+              />
+
             </div>
           </div>
         </div>
