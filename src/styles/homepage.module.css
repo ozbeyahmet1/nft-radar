@@ -1,0 +1,25 @@
+.homepage{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.homepage--left{
+    height: 100vh;
+    width: 100%;
+    padding: 40px;
+}
+
+.homepage--right{
+    background:red;
+    width: 40%;
+    height: 100vh;
+    background-color: #262D3A;
+}
+
+.homepage_grid{
+    display: grid;
+    width: auto;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}

@@ -1,6 +1,6 @@
 .navbar {
   border-right: 1px solid rgb(40 57 78);
-  width: 20%;
+  flex: 0.2;
   height: 100vh;
 }
 

@@ -1,7 +1,9 @@
 import { IHeadProps } from '@/components/Head';
+import Input from '@/components/Input';
 import { CustomLayout } from '@/components/Layout';
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import { useState } from 'react';
+import styles from '../styles/homepage.module.css'
 
 export default function Home() {
   const homepageHeadProps: IHeadProps = {
@@ -11,6 +13,46 @@ export default function Home() {
     ogDescription: '',
     ogTitle: '',
   };
+  const [click, setClick] = useState(false);
 
-  return <CustomLayout headProps={homepageHeadProps}></CustomLayout>;
+  return (
+    <CustomLayout headProps={homepageHeadProps}>
+      <main className={styles['homepage']}>
+        <div className={styles['homepage--left']}>
+          <Input />
+          <div className='homepage_banner' onClick={() => setClick(prevState => !prevState)}>
+            <img
+              src="https://www.arweave.net/Jmo4wDTdsDbNKtFlGGsLfxz2RSuOSXRFOpfJkwG9GD0?ext=png"
+              alt="banner"
+              width="100%"
+              height={250}
+            />
+            <div className={styles['homepage_grid']}>
+              <div style={{ background: "pink" }}>
+                a
+              </div>
+              <div style={{ background: "pink" }}>
+                a
+              </div>
+              <div style={{ background: "pink" }}>
+                a
+              </div>
+
+              <div style={{ background: "pink" }}>
+                a
+              </div>
+              <div style={{ background: "pink" }}>
+                a
+              </div>
+            </div>
+          </div>
+        </div>
+        {click &&
+          <div className={styles['homepage--right']}>
+            right
+          </div>
+        }
+      </main>
+    </CustomLayout>
+  );
 }
