@@ -1,5 +1,6 @@
 import { CustomHead } from './Head';
 import { IHeadProps } from './Head';
+import Navbar from './Navbar';
 
 type ILayoutProps = {
   children: React.ReactNode;
@@ -14,6 +15,7 @@ export const CustomLayout: React.FC<ILayoutProps> = ({
     <>
       <CustomHead {...headProps} />
       <main>{children}</main>
+      <Navbar />
     </>
   );
 };

@@ -1,5 +1,7 @@
 import { IHeadProps } from '@/components/Head';
 import { CustomLayout } from '@/components/Layout';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
   const homepageHeadProps: IHeadProps = {
@@ -10,7 +12,5 @@ export default function Home() {
     ogTitle: '',
   };
 
-  return (
-    <CustomLayout headProps={homepageHeadProps}>General Layout</CustomLayout>
-  );
+  return <CustomLayout headProps={homepageHeadProps}></CustomLayout>;
 }

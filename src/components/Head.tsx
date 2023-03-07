@@ -24,10 +24,7 @@ export const CustomHead: React.FC<IHeadProps> = ({
       <meta name="keywords" content={keywords} />
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link
-        rel="icon"
-        href="/logo.svg"
-      />
+      <link rel="icon" href="/logo.svg" />
 
       {/* Open Graph tags */}
       {/* Open Graph is a technology that allows web pages to become more rich and engaging when shared on social media platforms such as Facebook, Twitter, and LinkedIn. By adding Open Graph meta tags to your web page, you can control how your page appears when it's shared on social media, including the title, description, and image that are displayed. */}

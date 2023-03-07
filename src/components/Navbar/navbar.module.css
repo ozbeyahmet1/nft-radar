@@ -1,0 +1,76 @@
+.navbar {
+  border-right: 1px solid rgb(40 57 78);
+  width: 20%;
+  height: 100vh;
+}
+
+.navbar_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 40px;
+}
+
+.navbar_logo h3 {
+  font-size: 40px;
+  color: white;
+}
+
+.navbar_item ,
+.navbar_item--clicked
+{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #989aa7;
+  margin-bottom: 20px;
+  padding: 5px 40px;
+  gap: 10px;
+  border-left: 2px solid transparent;
+}
+
+.navbar_item p,
+.navbar_item--clicked p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.navbar_item--clicked{
+  border-left: 2px solid var(--pink);
+  color: white;
+}
+
+.navbar_item--clicked svg{
+  color:var(--pink)
+}
+
+
+.navbar_elements {
+  margin-bottom: 20px;
+}
+
+.navbar_elements h3 {
+  padding: 10px 40px;
+  color: var(--pink);
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.spin {
+  width: 40px;
+  height: 40px;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: center;
+  animation-duration: 10000ms;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
