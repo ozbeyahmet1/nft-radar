@@ -1,3 +1,7 @@
+:root{
+  --foreground:#262D3A;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
