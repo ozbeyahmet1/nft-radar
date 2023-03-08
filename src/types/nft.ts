@@ -5,6 +5,7 @@ export type Nft = {
     readonly name: string | null;
     readonly asset_contract: Owner | null;
     readonly permalink: string | null;
+    readonly description: string | null;
 }
 
 export type Owner = {

@@ -1,7 +1,8 @@
 .navbar {
   border-right: 1px solid rgb(40 57 78);
-  flex: 0.2;
+  width: 20%;
   height: 100vh;
+  position: fixed;
 }
 
 .navbar_logo {

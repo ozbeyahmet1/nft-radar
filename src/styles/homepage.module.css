@@ -1,7 +1,9 @@
 .homepage{
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: flex-start;
+    margin-left: 20%;
+
 }
 .homepage--left{
     height: 100vh;
@@ -9,12 +11,6 @@
     padding: 40px;
 }
 
-.homepage--right{
-    background:red;
-    width: 40%;
-    height: 100vh;
-    background-color: #262D3A;
-}
 
 .homepage_grid{
     display: grid;

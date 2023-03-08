@@ -1,3 +1,4 @@
+import { MouseEventHandler } from 'react';
 import styles from './nftCard.module.css'
 
 export interface INftCardProps {
@@ -5,11 +6,12 @@ export interface INftCardProps {
     owner: string | null;
     price: number | null;
     name: string | null;
+    onClick: MouseEventHandler<HTMLDivElement> | undefined
 }
 
-export const NftCard: React.FC<INftCardProps> = ({ imageSrc, owner, price, name }) => {
+export const NftCard: React.FC<INftCardProps> = ({ imageSrc, owner, price, name, onClick }) => {
     return (
-        <div className={styles['nftCard']} >
+        <div className={styles['nftCard']} onClick={onClick}>
             <div className={styles['nftCard_image']}>
                 <img src={imageSrc as string} alt="" />
                 <div className={styles['nftCard_banner']}>
