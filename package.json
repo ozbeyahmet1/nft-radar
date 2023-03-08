@@ -24,7 +24,6 @@
     "dotenv": "^16.0.3",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
-    "ethers": "^6.1.0",
     "framer-motion": "^10.1.0",
     "fs": "^0.0.1-security",
     "next": "13.2.3",

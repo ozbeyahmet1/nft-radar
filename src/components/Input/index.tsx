@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styles from './input.module.css';
 import { CiSearch } from 'react-icons/ci';
 import isWalletAddress from '@/hooks/isWalletAddress';
@@ -10,9 +10,7 @@ type IInputProps = {
 };
 
 export default function Input({
-  inputValue,
   setInputValue,
-  fetchNfts,
 }: IInputProps) {
   const [value, isValid, handleChange] = isWalletAddress();
   const [error, setError] = useState<boolean>(false);
