@@ -11,6 +11,9 @@
     padding: 40px;
 }
 
+.homepage_banner{
+    border-radius: 15px;
+}
 
 .homepage_grid{
     display: grid;
@@ -18,4 +21,5 @@
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 20px;
+    padding: 30px 0;
 }

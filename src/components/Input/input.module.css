@@ -2,12 +2,41 @@
     width: 100%;
     background-color: #262D3A;
     border: none;
-    padding: 20px 10px;
-    border-radius: 10px;
     color: white;
-    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 3px;
+    font-family: 'Mulish', sans-serif;
+
 }
 
 .input[type="text"]:focus{
     outline: none;
+}
+
+
+.inputWrapper,
+.inputWrapper--error{
+    padding: 15px 10px;
+    background-color: white;
+    display: flex;
+    align-items:center;
+    background-color: #262D3A;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.inputWrapper--error{
+    border: 1px solid var(--warning);
+}
+
+
+.inputWrapper_errorField{
+    color: var(--warning);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.inputContainer{
+    margin-bottom: 30px;
 }

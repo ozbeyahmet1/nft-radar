@@ -3,6 +3,7 @@
   --foreground: #262d3a;
   --pink: #fe4b8c;
   --grey: #989aa7;
+  --warning:rgba(251, 82, 82, 0.799);
 }
 
 * {

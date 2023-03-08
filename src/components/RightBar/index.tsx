@@ -2,15 +2,18 @@ import { Nft } from '@/types/nft';
 import React, { Dispatch, SetStateAction } from 'react';
 import styles from './rightBar.module.css'
 import { IoCloseOutline } from 'react-icons/io5';
-
+import { motion } from "framer-motion";
 export interface IRightBar {
     data: Nft
     setVisibility: Dispatch<SetStateAction<boolean>>
 }
 
+
+
 export default function RightBar({ data, setVisibility }: IRightBar) {
 
     return (
+
         <div className={styles['rightBarWrapper']}>
             <div className={styles['rightBar']}>
                 <IoCloseOutline size={30} className={styles['rightBar_closeIcon']} color="white" onClick={() => setVisibility(false)} />
