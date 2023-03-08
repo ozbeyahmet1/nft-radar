@@ -33,11 +33,11 @@ const item = {
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': '28356f654amshecd9ed1a32658c9p157104jsnc94dac598f66',
+    'X-RapidAPI-Key': process.env.NEXT_RAPID_API_KEY as string,
     'X-RapidAPI-Host': 'opensea-data-query.p.rapidapi.com',
   },
 };
-
+console.log(process.env.RAPID_API_KEY as string)
 export default function Home() {
   const [showRightBar, setShowRightBar] = useState<boolean>(false);
   const [nfts, setNfts] = useState<Data>(null);
@@ -47,6 +47,7 @@ export default function Home() {
   );
   const [statue, setStatue] = useState(false);
   const handleFetchNfts = async () => {
+    setStatue(false)
     try {
       fetch(
         `https://opensea-data-query.p.rapidapi.com/api/v1/assets?owner=${inputValue}&order_direction=desc&limit=20`,
@@ -87,9 +88,6 @@ export default function Home() {
           />
           <div className={styles['homepage_banner']}>
             <img
-              // src="https://www.arweave.net/Jmo4wDTdsDbNKtFlGGsLfxz2RSuOSXRFOpfJkwG9GD0?ext=png"
-              // src="./banner.png"
-              // src="https://t3.ftcdn.net/jpg/04/64/20/14/240_F_464201407_AKHghGSgcbahs4lu1RXVeVjXtwOG6f7F.jpg"
               src="https://t4.ftcdn.net/jpg/04/20/77/27/240_F_420772734_EUQv6soEJ0dZ2bcug8frDt73Pk4yXUbb.jpg"
               alt="banner"
               width="100%"
