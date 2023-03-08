@@ -1,25 +1,85 @@
-.homepage{
-    width: 80%;
-    display: flex;
-    align-items: flex-start;
-    margin-left: 20%;
-
+.homepage {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  margin-left: 20%;
 }
-.homepage--left{
-    height: 100vh;
-    width: 100%;
-    padding: 40px;
-}
-
-.homepage_banner{
-    border-radius: 15px;
+.homepage--left {
+  height: 100%;
+  width: 100%;
+  padding: 40px;
 }
 
-.homepage_grid{
-    display: grid;
-    width: auto;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 20px;
-    padding: 30px 0;
+.homepage_banner {
+  position: relative;
+}
+
+.homepage_banner img {
+  height: 300px;
+  border-radius: 15px;
+}
+
+.homepage_slogan {
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+  width: 90%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.homepage_slogan h4 {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  width: fit-content;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.homepage_slogan h2 {
+  font-size: 40px;
+  color: white;
+}
+
+.homepage_motto {
+  margin-bottom: 50px;
+}
+
+.homepage_grid {
+  display: grid;
+  width: auto;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+  padding: 10px 0px 30px 0px;
+}
+
+.homepage_loading {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.spin {
+  width: 80px;
+  height: 80px;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: center;
+  animation-duration: 1000ms;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

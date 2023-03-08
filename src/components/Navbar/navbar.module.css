@@ -17,9 +17,8 @@
   color: white;
 }
 
-.navbar_item ,
-.navbar_item--clicked
-{
+.navbar_item,
+.navbar_item--clicked {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -36,15 +35,14 @@
   line-height: 24px;
 }
 
-.navbar_item--clicked{
+.navbar_item--clicked {
   border-left: 2px solid var(--pink);
   color: white;
 }
 
-.navbar_item--clicked svg{
-  color:var(--pink)
+.navbar_item--clicked svg {
+  color: var(--pink);
 }
-
 
 .navbar_elements {
   margin-bottom: 20px;

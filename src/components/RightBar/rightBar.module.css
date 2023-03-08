@@ -1,95 +1,95 @@
-.rightBarWrapper{
-    width: 40%;
-    height: 100%;
+.rightBarWrapper {
+  width: 40%;
+  height: 100%;
 }
 
-.rightBar{
-    background:red;
-    width: 22%;
-    background-color: #262D3A;
-    margin-top: 40px;
-    border-radius:10px 0 0 10px ;
-    position: fixed;
-    right: 20px;
-    padding: 30px;
-    gap: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.rightBar {
+  background: red;
+  width: 22%;
+  background-color: var(--balanced);
+  margin-top: 40px;
+  border-radius: 10px 0 0 10px;
+  position: fixed;
+  right: 20px;
+  padding: 30px;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.rightBar_closeIcon{
-    background-color: white;
-    padding: 5px;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    cursor: pointer;
+.rightBar_closeIcon {
+  background-color: white;
+  padding: 5px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  cursor: pointer;
 }
 
-.rightBar_nftImage{
-    width: 100%;
-    height: auto;
+.rightBar_nftImage {
+  width: 100%;
+  height: auto;
 }
 
-.rightBar_index{
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    justify-content: space-between;
+.rightBar_index {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  justify-content: space-between;
 }
 
-.rightBar_name{
-    color: white;
-    font-size: 16px;
-    margin-bottom: 5px;
+.rightBar_name {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
-.rightBar_owner{
-    color: grey;
-    font-size: 14px;
+.rightBar_owner {
+  color: grey;
+  font-size: 14px;
 }
 
-.rightBar_description{
-    color: white;
-    font-size: 16px;
+.rightBar_description {
+  color: white;
+  font-size: 16px;
 }
 
-.rightBar_userImage{
-    width: 60px ;
-    height: 60px;
-    border-radius: 100%;
-    border: 1px solid white;
+.rightBar_userImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 1px solid white;
 }
 
-.rightBar_anchor{
-    width: 100%;
-    text-decoration: none;
+.rightBar_anchor {
+  width: 100%;
+  text-decoration: none;
 }
 
-.rightBar_button{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: #2081e2;
-    border: transparent 1px solid;
-    border-radius: 5px;
-    padding: 5px;  
-    cursor: pointer;
-    transition: all 0.3s;
+.rightBar_button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #2081e2;
+  border: transparent 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-.rightBar_button:hover{
-    border: 1px rgb(167, 167, 167) solid;
+.rightBar_button:hover {
+  border: 1px rgb(167, 167, 167) solid;
 }
 
 .rightBar_button p {
-    color: white;
-    font-size: 24px;
-    font-family: 'Mulish', sans-serif;
+  color: white;
+  font-size: 24px;
+  font-family: 'Mulish', sans-serif;
 }

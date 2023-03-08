@@ -1,42 +1,40 @@
-.input[type="text"]{
-    width: 100%;
-    background-color: #262D3A;
-    border: none;
-    color: white;
-    font-size: 16px;
-    padding: 3px;
-    font-family: 'Mulish', sans-serif;
-
+.input[type='text'] {
+  width: 100%;
+  background-color: var(--balanced);
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 3px;
+  font-family: 'Mulish', sans-serif;
 }
 
-.input[type="text"]:focus{
-    outline: none;
+.input[type='text']:focus {
+  outline: none;
 }
-
 
 .inputWrapper,
-.inputWrapper--error{
-    padding: 15px 10px;
-    background-color: white;
-    display: flex;
-    align-items:center;
-    background-color: #262D3A;
-    border-radius: 10px;
-    gap: 10px;
+.inputWrapper--error {
+  padding: 15px 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  background-color: var(--balanced);
+  border-radius: 10px;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.inputWrapper--error{
-    border: 1px solid var(--warning);
+.inputWrapper--error {
+  border: 1px solid var(--warning);
 }
 
-
-.inputWrapper_errorField{
-    color: var(--warning);
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
+.inputWrapper_errorField {
+  color: var(--warning);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
-.inputContainer{
-    margin-bottom: 30px;
+.inputContainer {
+  margin-bottom: 30px;
 }
