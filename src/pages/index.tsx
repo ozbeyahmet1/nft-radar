@@ -70,7 +70,7 @@ export default function Home() {
   }, [inputValue]);
 
   const homepageHeadProps: IHeadProps = {
-    title: 'Homepage',
+    title: 'NftRadar',
     description: '',
     keywords: '',
     ogDescription: '',
