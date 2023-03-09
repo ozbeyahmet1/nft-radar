@@ -38,7 +38,7 @@ export default function RightBar({ data, setVisibility }: IRightBar) {
           </div>
         </div>
         <p className={styles['rightBar_description']}>
-          {truncateString(data.description as string, 260)}
+          {data.description ? truncateString(data.description as string, 260) : null}
         </p>
         <a
           href={data.permalink as string}

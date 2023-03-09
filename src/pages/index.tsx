@@ -65,7 +65,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    console.log('sws');
+    setShowRightBar(false);
     handleFetchNfts();
   }, [inputValue]);
 
